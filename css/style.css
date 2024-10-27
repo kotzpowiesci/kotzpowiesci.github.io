@@ -1,0 +1,52 @@
+
+
+	
+	button {
+		border-radius: 200px;
+		color:white;
+		background-color:dimgray;
+		font-family:monospace ;
+		font-size:30px;
+	}
+
+	
+
+	.navbar {
+	  width: 100%;
+	  background-color: black;
+	  overflow: auto;
+	}
+
+	.navbar a {
+	  float: left;
+	  padding: 12px;
+	  color: white;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+
+	.navbar :hover {
+	  background-color: blue;
+	 
+	}
+	h1   {color: #1CEEEE; }
+	p    {color: #FFFFFF; }
+	
+	body {font-family: monospace;} 
+	  h1   {color: #0703d3; font-family: monospace;}
+	  
+	  p    {color: #000000; font-family: monospace;}
+ 
+	  body {
+		background-image: url(/images/background.jpg);
+		background-size: cover;
+
+		
+		
+	  }  
+	  img {
+		width: 50%; /* Set width to 50% of the container */
+		height: auto; /* Maintain aspect ratio */
+		max-width: 100%; /* Prevent overflow */
+	}
+	

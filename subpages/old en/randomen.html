@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> kotzpowiesci's github site </title>
+	  <link rel="icon" href="floppa-nawpic.png">
+</head>
+<body>
+<div class="navbar">
+	  <a href="indexen.HTML"><img src="home.png" style="width:75px;height:75px;"><img src="download.jpg" style="width:225px;height:112.5px;"></i> </a> 
+		
+	  <a href="contact.html"><img src="contacten.png" alt=pobra"HTML tutorial" style="width:225px;height:112.5px;"></a>
+	  <a href="flopaphotosen.html"><img src="flopaphotosen.png" style="width:225px;height:112.5px;"</a>
+	  <style> .navbar a {	
+	  color: white;
+	  font-size: 20px
+      }	
+.navbar p {	
+	  color: white;
+	  font-size: 20px
+      }	  	  
+	  </style>
+	  <a href="randomen.html"><img src="randomphotoen.png" style="width:225px;height:112.5px;"</a>
+	  <a href="#"> <center> <img src="englishusauk.png" style="width:50px;height:30px;"> </center> <center> English </center>  <center> (Angielski)</center> </a>
+	  <a href="random.html"> <center> <img src="poland.png" style="width:30px;height:30px;"> </center> <center> Polski </center> <center> (Polish) </center>	 </a>
+	</div>
+<h1>	
+<CENTER>
+Your random floppa photo
+</center>
+<center>
+(you can draw other photo using the button bottom or refreshing the site)
+</CENTER>
+</h1>
+<center>
+<button style=font-size:35px; onClick="window.location.reload();">Draw again <style>  </style> </button>
+</center>
+<CENTER>
+    <center>
+    <img id="randomImage" src="" alt="Wylosowane zdjęcie">
+	</center>
+	<center>
+	<h1>
+Source: pinterest.com <button onCLick="info()">Info</button> 
+</h1>
+<script>
+function info() {
+  alert("EN: Authors of photos posted here who do not want their photos to be here, please contact me at the following e-mail address: floppateam34@gmail.com or via discord @kotzpowiesci");
+  
+}
+</script>
+
+</center>
+    <script>
+        // Lista adresów URL do zdjęć
+        const imageUrls = [
+            "https://i.imgur.com/78Rjj09.jpg"
+     , "https://i.imgur.com/KGw8NID.jpg"
+     , "https://i.imgur.com/zQXslrs.jpg"
+	 , "https://i.imgur.com/w6BOUtW.jpg"
+	 , "https://i.imgur.com/dcTR7v9.jpg"
+	 , "https://i.imgur.com/StJR9ab.jpg"
+	 , "https://i.imgur.com/StJR9ab.jpg"
+	 , "https://i.imgur.com/NcTT6k8.jpg"
+	 , "https://i.imgur.com/NcTT6k8.jpg"
+	 , "https://i.imgur.com/cXNJqRz.jpg"
+	 , "https://i.imgur.com/BfcVkFV.jpg"
+	 , "https://i.imgur.com/BfcVkFV.jpg"
+	 , "https://i.imgur.com/wO6CZa1.jpg"
+	 , "https://i.imgur.com/fYq5uAM.jpg"
+	 , "https://i.imgur.com/1rDwJaE.jpg"
+	 , "https://i.imgur.com/2yvDGM9.jpg"
+	 , "https://i.imgur.com/3QBsn05.jpg"
+	 , "https://i.imgur.com/BM5aj3l.jpg"
+	 , "https://i.imgur.com/me9RmFR.jpg"
+	 , "https://i.imgur.com/99zxH1Z.jpg"
+	 , "https://i.imgur.com/Y3ShLwD.jpg"
+	 , "https://i.imgur.com/21mDzoW.jpg"
+	 , "https://i.imgur.com/vg2WEm5.jpg"
+	 , "https://i.imgur.com/gUby2ip.jpg"
+	 , "https://i.imgur.com/yu87auG.jpg"
+	 , "https://i.imgur.com/oJ3O9UG.jpg"
+	 , "https://i.imgur.com/YYpLdGc.jpg"
+	 , "https://i.imgur.com/eJ4OVLD.jpg"
+	 , "https://i.imgur.com/zQPOWf1.jpg"
+	 , "https://i.imgur.com/goTrUEu.jpg"
+	 , "https://i.imgur.com/zZjc8UO.jpg"
+	 , "https://i.imgur.com/RglUYwr.jpg"
+	 , "https://i.imgur.com/Uw6MDyP.jpg"
+	 , "https://i.imgur.com/sy4VsuR.jpg"
+	 , "https://i.imgur.com/wDfq0bh.jpg"
+	 , "https://i.imgur.com/OSnuEQh.jpg"
+	 , "https://i.imgur.com/wnGn1qc.jpg"
+	 , "https://i.imgur.com/37uqcT7.jpg"
+	 , "https://i.imgur.com/9QAhJNY.jpg"
+	 , "https://i.imgur.com/zoOs2Ao.jpg"
+	 , "https://i.imgur.com/sMi8VjP.jpg"
+	 , "https://i.imgur.com/Y2zY7YX.jpg"
+	 , "https://i.imgur.com/1urC7TH.jpg"
+	 , "https://i.imgur.com/Ta5hX9f.jpg"
+	 , "https://i.imgur.com/jQADnV1.jpg"
+	 , "https://i.imgur.com/CpeCZ9Z.jpg"
+	 , "https://i.imgur.com/adPCSkE.jpg"
+	 , "https://i.imgur.com/HRNBLkp.jpg"
+	 , "https://i.imgur.com/ieD5HbO.png"
+	 , "https://i.imgur.com/5fYjE7B.jpg"
+        ];
+
+        // Losowanie indeksu
+        const randomIndex = Math.floor(Math.random() * imageUrls.length);
+        
+        // Pobieranie elementu obrazu
+        const imgElement = document.getElementById("randomImage");
+
+        // Ustawianie źródła obrazu na wylosowany URL
+        imgElement.src = imageUrls[randomIndex];
+    </script>
+	<style>
+	body {font-family: monospace;} 
+	h1   {color: #1CEEEE; font-family: monospace;}
+	p    {color: #FFFFFF; font-family: monospace;}
+body {
+	  background-image: url('bigfloppa1.png');
+	  
+	}
+	</style>
+	<style>
+	
+	body {font-family: Arial, Helvetica, sans-serif;}
+
+	.navbar {
+	  width: 100%;
+	  background-color: black;
+	  overflow: auto;
+	}
+
+	.navbar a {
+	  float: left;
+	  padding: 12px;
+	  color: white;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+
+	.navbar a:hover {
+	  background-color: blue;
+	}
+
+	.active {
+	  background-color: #04AA6D;
+	}
+
+	@media screen and (max-width: 500px) {
+	  .navbar a {
+		float: none;
+		display: block;
+	  }
+	}
+	</style>
+</body>
+</html>

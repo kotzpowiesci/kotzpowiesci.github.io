@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	   <title> kotzpowiesci's github site </title>
+	  <link rel="icon" href="/images/floppa-nawpic.png">
+	  <link rel="stylesheet" href="/css/style.css">
+	<div class="navbar">
+	  <a href="../indexpl.HTML"> <img src="/images/titleimage.jpg" style="width:373px;height:112.5px;"></i> </a> 
+		
+	  <a href="/subpages/Contact.html"><img src="/images/contact.png" style="width:225px;height:112.5px;"></a>
+	  <a href="/subpages/flopaphotos.html"><img src="/images/flopaphotos.png" style="width:225px;height:112.5px;">
+	  <a href="/subpages/random.html"><img src="/images/randomphoto.png" style="width:225px;height:112.5px;">
+	  <a href="randomen.html"> <center> <img src="/images/englishusauk.png" style="width:50px;height:30px;"> </center> <center> English </center>  <center> (Angielski)</center> </a>
+	  <a href="#"> <center> <img src="/images/poland.png" style="width:30px;height:30px;"> </center> <center> Polski </center> <center> (Polish) </center>	 </a>
+	  
+	</div>
+
+	</head>
+	
+	<body>  
+        <center><img src="images/small.png" style="width:1px;height:1px;" </center> 
+<CENTER><h1>
+Twoje wylosowane zdjęcie Floppy
+</h1></center>
+<center> <h1>
+(możesz wylosowac inne zdjecie uzywajac przycisku poniżej albo odświeżając stronę)
+</h1></CENTER>
+<center>
+<button style=font-size:35px; onClick="window.location.reload();">Losuj Ponownie</button>
+</center>
+<CENTER>
+    <center>
+    <img id="randomImage" style="width:40%;height:40%;" src="imgElement.src" alt="Wylosowane zdjęcie">
+	</center>
+	<center>
+	<h1>Źródło: pinterest.com <button onCLick="info()">Info</button> </h1>
+<script>
+function info() {
+  alert("PL: Autorów zdjęć tu umieszczonych którzy nie życzą sobie tego żeby ich zdjęcia tu byly proszę o kontakt na adres mailowy: floppateam34@gmail.com lub poprzez discord @kotzpowiesci");
+  
+}
+</script>
+
+</center>
+    <script>
+        const imageUrls = [
+            "https://i.imgur.com/78Rjj09.jpg"
+     , "https://i.imgur.com/KGw8NID.jpg"
+     , "https://i.imgur.com/zQXslrs.jpg"
+	 , "https://i.imgur.com/w6BOUtW.jpg"
+	 , "https://i.imgur.com/dcTR7v9.jpg"
+	 , "https://i.imgur.com/StJR9ab.jpg"
+	 , "https://i.imgur.com/StJR9ab.jpg"
+	 , "https://i.imgur.com/NcTT6k8.jpg"
+	 , "https://i.imgur.com/NcTT6k8.jpg"
+	 , "https://i.imgur.com/cXNJqRz.jpg"
+	 , "https://i.imgur.com/BfcVkFV.jpg"
+	 , "https://i.imgur.com/BfcVkFV.jpg"
+	 , "https://i.imgur.com/wO6CZa1.jpg"
+	 , "https://i.imgur.com/fYq5uAM.jpg"
+	 , "https://i.imgur.com/1rDwJaE.jpg"
+	 , "https://i.imgur.com/2yvDGM9.jpg"
+	 , "https://i.imgur.com/3QBsn05.jpg"
+	 , "https://i.imgur.com/BM5aj3l.jpg"
+	 , "https://i.imgur.com/me9RmFR.jpg"
+	 , "https://i.imgur.com/99zxH1Z.jpg"
+	 , "https://i.imgur.com/Y3ShLwD.jpg"
+	 , "https://i.imgur.com/21mDzoW.jpg"
+	 , "https://i.imgur.com/vg2WEm5.jpg"
+	 , "https://i.imgur.com/gUby2ip.jpg"
+	 , "https://i.imgur.com/yu87auG.jpg"
+	 , "https://i.imgur.com/oJ3O9UG.jpg"
+	 , "https://i.imgur.com/YYpLdGc.jpg"
+	 , "https://i.imgur.com/eJ4OVLD.jpg"
+	 , "https://i.imgur.com/zQPOWf1.jpg"
+	 , "https://i.imgur.com/goTrUEu.jpg"
+	 , "https://i.imgur.com/zZjc8UO.jpg"
+	 , "https://i.imgur.com/RglUYwr.jpg"
+	 , "https://i.imgur.com/Uw6MDyP.jpg"
+	 , "https://i.imgur.com/sy4VsuR.jpg"
+	 , "https://i.imgur.com/wDfq0bh.jpg"
+	 , "https://i.imgur.com/OSnuEQh.jpg"
+	 , "https://i.imgur.com/wnGn1qc.jpg"
+	 , "https://i.imgur.com/37uqcT7.jpg"
+	 , "https://i.imgur.com/9QAhJNY.jpg"
+	 , "https://i.imgur.com/zoOs2Ao.jpg"
+	 , "https://i.imgur.com/sMi8VjP.jpg"
+	 , "https://i.imgur.com/Y2zY7YX.jpg"
+	 , "https://i.imgur.com/1urC7TH.jpg"
+	 , "https://i.imgur.com/Ta5hX9f.jpg"
+	 , "https://i.imgur.com/jQADnV1.jpg"
+	 , "https://i.imgur.com/CpeCZ9Z.jpg"
+	 , "https://i.imgur.com/adPCSkE.jpg"
+	 , "https://i.imgur.com/HRNBLkp.jpg"
+	 , "https://i.imgur.com/ieD5HbO.png"
+	 , "https://i.imgur.com/5fYjE7B.jpg"
+        ];
+        const randomIndex = Math.floor(Math.random() * imageUrls.length);
+        const imgElement = document.getElementById("randomImage");
+        imgElement.src = imageUrls[randomIndex];
+    </script>
+	
+</body>
+</html>
